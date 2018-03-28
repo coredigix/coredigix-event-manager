@@ -1,0 +1,30 @@
+{
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "author": "coredigix",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-include": "^2.3.1",
+    "gulp-minify": "^2.1.0",
+    "gulp-rename": "^1.2.2"
+  },
+  "name": "coredigix-event-manager",
+  "description": "add event manager to object",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coredigix/coredigix-event-manager.git"
+  },
+  "keywords": [
+    "event",
+    "propagation",
+    "clone"
+  ],
+  "bugs": {
+    "url": "https://github.com/coredigix/coredigix-event-manager/issues"
+  },
+  "homepage": "https://github.com/coredigix/coredigix-event-manager#readme"
+}
