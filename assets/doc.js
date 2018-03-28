@@ -1,25 +1,29 @@
 /**
  * this brighter library add 3 utils functions to an element
+ * on       : add event listener
+ * off      : remove event listener
+ * trigger  : trigger an event
+ * 
  * * *
-	 * .on('eventName', eventListner)
+	 * .on('event1', eventListner)
 	 * .on('event1 event2', eventListner)
-	 * .on('eventName.groupe', eventListner)
-	 * .on('eventName.group.subGroup', eventListner)
-	 * .on('eventName.grp', {options}, eventListner)
+	 * .on('eventName.namespace', eventListner)
+	 * .on('eventName.namespace.sub-namespace', eventListner)    // namespaces are case unsensitive
+	 * .on('eventName.grp', eventListner, {options})
 	 * 
-	 * .off()							// unbind all avents
-	 * .off('eventName')					// unbind all listeners on this event
-	 * .off('eventName.grp.subGrp')		// unbind all events of this group
+	 * .off()							               // unbind all avents
+	 * .off('eventName')					      // unbind all listeners on this event
+	 * .off('eventName.namespace')		   // unbind all events of this namespace
 	 * .off('eventName', eventListener)	// unbind this listner on this event
-	 * .off('eventName.grp', eventListener)// unbind this listner on this event from this group and its subgroups
+	 * .off('eventName.namespace', eventListener)// unbind this listner on this event from this namespace
    *
-   * .off('.namespace') // remove all eventlisteners of this namespace 
+   * .off('.namespace')           // remove all eventlisteners of this namespace 
    * .off('.namespace', listener) // remove this listener from all events with this namespace
 	 *
 	 * .trigger('eventName', extraParams)
-	 * .trigger(eventName)
+	 * .trigger('eventName')
+   * .trigger(event)
  * * *
- * target element should support tree functions: addEventListener, removeEventListener and dispatchEvent
  *
  * Example of use
  * * *
