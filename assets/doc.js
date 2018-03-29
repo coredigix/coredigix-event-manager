@@ -19,6 +19,8 @@
    *
    * .off('.namespace')           // remove all eventlisteners of this namespace 
    * .off('.namespace', listener) // remove this listener from all events with this namespace
+   *
+   * .off(listener)   // remove this event listener from all events
 	 *
 	 * .trigger('eventName', extraParams)
 	 * .trigger('eventName')
